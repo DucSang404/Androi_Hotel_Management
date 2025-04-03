@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/background"
+            app:title="Room Detail"
+            android:titleTextColor="@color/white"
+            app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+
+        <!-- Ảnh phòng -->
+
+        <!-- Bố cục thông tin phòng -->
+
+        <ImageView
+            android:id="@+id/imgRoomDetail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic_home3" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:stretchColumns="1">
+
+            <!-- Dòng thông tin chung -->
+            <TableRow>
+                <TextView
+                    style="@style/TableLabelStyle"
+                    android:text="Title :" />
+                <TextView
+                    style="@style/TableValueStyle"
+                    android:id="@+id/tvTitle"
+                    android:text="Deluxe Double Bed Room" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TableLabelStyle"
+                    android:text="Room Number :" />
+                <TextView
+                    style="@style/TableValueStyle"
+                    android:id="@+id/tvRoomNumber"
+                    android:text="104" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TableLabelStyle"
+                    android:text="Facilities :" />
+                <TextView
+                    style="@style/TableValueStyle"
+                    android:id="@+id/tvFacilities"
+                    android:text="Room Service" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TableLabelStyle"
+                    android:text="Category :" />
+                <TextView
+                    style="@style/TableValueStyle"
+                    android:id="@+id/tvCategory"
+                    android:text="Deluxe Rooms" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TableLabelStyle"
+                    android:text="Total Beds :" />
+                <TextView
+                    style="@style/TableValueStyle"
+                    android:id="@+id/tvTotalBeds"
+                    android:text="2 Beds" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TableLabelStyle"
+                    android:text="Maximum Adults :" />
+                <TextView
+                    style="@style/TableValueStyle"
+                    android:id="@+id/tvMaxAdults"
+                    android:text="4 Adults" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TableLabelStyle"
+                    android:text="Maximum Child :" />
+                <TextView
+                    style="@style/TableValueStyle"
+                    android:id="@+id/tvMaxChild"
+                    android:text="2 Children" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TableLabelStyle"
+                    android:text="Fare :" />
+                <TextView
+                    style="@style/TableValueStyle"
+                    android:id="@+id/tvFare"
+                    android:text="$200" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TableLabelStyle"
+                    android:text="Description :" />
+                <TextView
+                    style="@style/TableValueStyle"
+                    android:id="@+id/tvDescription"
+                    android:text="Nice Room with good view" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Nút đặt phòng -->
+        <Button
+            android:id="@+id/btnBookRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/seagreen"
+            android:text="Book Room"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

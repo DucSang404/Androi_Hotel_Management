@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DAS_Hotel</string>
+    <string name="app_logo">Logo của ứng dụng</string>
+    <string name="register_text">Don\'t Have an Account? <a href="register">Register Now</a></string>
+    <string name="change_profile_image">Change profile image</string>
+
+</resources>
