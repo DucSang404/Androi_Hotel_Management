@@ -11,9 +11,9 @@ import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.das_hotel.hotel.HotelActivity;
 import com.example.das_hotel.login.LoginActivity;
 import com.example.das_hotel.R;
 import com.google.android.material.navigation.NavigationView;
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager2 viewPagerSlider;
     private Handler sliderHandler = new Handler(Looper.getMainLooper());
-    private DrawerLayout drawerLayout;
+    private AppCompatActivity drawerLayout;
     private NavigationView navigationView;
     private ImageButton menuButton;
     private Runnable sliderRunnable = new Runnable() {
@@ -51,14 +51,14 @@ public class MainActivity extends AppCompatActivity {
         viewPagerSlider.setAdapter(adapter);
 
         // Navigation
-        drawerLayout = findViewById(R.id.drawer_layout);
+//        drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.design_navigation_view);
         menuButton = findViewById(R.id.menuButton);
 
         menuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawerLayout.openDrawer(navigationView);
+//                drawerLayout.openDrawer(navigationView);
             }
         });
 
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                     // Xử lý cho Search Room by Category
                 }
                 else if (id == R.id.nav_login) {
-                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                    Intent intent = new Intent(MainActivity.this, HotelActivity.class);
                     startActivity(intent);
                 }
                 else if (id == R.id.nav_about_us) {
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                     // Xử lý cho Search Room by Category
                 }
 
-                drawerLayout.closeDrawers();
+//                drawerLayout.closeDrawers();
                 return true;
             }
         });
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         cardLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
