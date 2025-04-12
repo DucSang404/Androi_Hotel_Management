@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoomItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:background="@drawable/border_background"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgRoom"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic_home3" />
+
+    <!-- Thông tin phòng -->
+
+    <TextView
+        android:id="@+id/tvRoomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deluxe Double City View"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRoomDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="26 m² | 1 giường cỡ king | City view"
+        android:textColor="@color/gray"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvRoomAdditional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Người lớn • Bao gồm bữa sáng"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Giá tiền -->
+    <TextView
+        android:id="@+id/tvRoomPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="474.000 VND (đã bao gồm thuế và phí)"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Số lượng phòng còn lại -->
+    <TextView
+        android:id="@+id/tvRoomsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chỉ còn 4 phòng tại mức giá này!"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <!-- Nút Chọn phòng -->
+    <TextView
+        android:id="@+id/tvChooseRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="Chọn Phòng"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
